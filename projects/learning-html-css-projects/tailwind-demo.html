@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Demo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-indigo-600 fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-white font-bold text-xl">
+                        <i class="fab fa-tailwind mr-2"></i>Tailwind Demo
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-white hover:bg-indigo-500 px-3 py-2 rounded-md">Home</a>
+                        <a href="#features" class="text-white hover:bg-indigo-500 px-3 py-2 rounded-md">Features</a>
+                        <a href="#gallery" class="text-white hover:bg-indigo-500 px-3 py-2 rounded-md">Gallery</a>
+                        <a href="#contact" class="text-white hover:bg-indigo-500 px-3 py-2 rounded-md">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-indigo-500 to-purple-600 pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl font-bold mb-4">Tailwind CSS Features</h1>
+                    <p class="text-xl mb-6">A utility-first CSS framework for rapid UI development.</p>
+                    <div class="space-x-4">
+                        <button class="bg-white text-indigo-600 px-6 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">
+                            Get Started
+                        </button>
+                        <button class="border-2 border-white text-white px-6 py-2 rounded-lg hover:bg-white hover:text-indigo-600 transition duration-300">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <img src="https://via.placeholder.com/600x400" class="rounded-lg shadow-xl" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Tailwind Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Utility Classes -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Utility Classes</h3>
+                    <p class="text-gray-600">Build custom designs without leaving your HTML.</p>
+                </div>
+                <!-- Responsive Design -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Responsive Design</h3>
+                    <p class="text-gray-600">Fully responsive components using simple modifiers.</p>
+                </div>
+                <!-- Modern Design -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Modern Design</h3>
+                    <p class="text-gray-600">Beautiful, modern designs with minimal effort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://via.placeholder.com/400x300" class="w-full h-full object-cover transform hover:scale-105 transition duration-300" alt="Gallery Image 1">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://via.placeholder.com/400x300" class="w-full h-full object-cover transform hover:scale-105 transition duration-300" alt="Gallery Image 2">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://via.placeholder.com/400x300" class="w-full h-full object-cover transform hover:scale-105 transition duration-300" alt="Gallery Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Your Name" 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition duration-300">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition duration-300">
+                    </div>
+                    <div>
+                        <textarea rows="4" placeholder="Your Message" 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition duration-300"></textarea>
+                    </div>
+                    <button type="submit" 
+                        class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">&copy; 2025 Tailwind Demo. All rights reserved.</p>
+                <div class="space-x-6">
+                    <a href="#" class="text-white hover:text-indigo-400 transition duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-indigo-400 transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-indigo-400 transition duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
