@@ -1,155 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Restaurant Management System</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #FFE4D0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header Navigation */
-        .nav-header {
-            background-color: #FFE4D0;
-            padding: 10px 0;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .nav-header table {
-            width: 100%;
-        }
-
-        .nav-header td {
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .nav-header img {
-            width: 60px;
-            height: 50px;
-            vertical-align: middle;
-        }
-
-        /* Banner Image */
-        .banner {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        /* Main Content Layout */
-        .main-content {
-            display: flex;
-            margin: 20px;
-        }
-
-        /* Left Sidebar */
-        .sidebar {
-            width: 200px;
-            padding-right: 20px;
-        }
-
-        .sidebar img {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        /* Center Content */
-        .content {
-            flex: 1;
-            padding: 0 20px;
-        }
-
-        .welcome-section h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            font-family: serif;
-        }
-
-        .welcome-section p {
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-
-        .article {
-            display: flex;
-            margin-bottom: 20px;
-            align-items: start;
-        }
-
-        .article img {
-            display: flex;
-            margin-bottom: 20px;
-            align-items: start;
-        }
-
-        .article-content h4 {
-            color: #00FF00;
-            margin: 0 0 5px 0;
-            font-size: 16px;
-        }
-
-        .article-content p {
-            margin: 0;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        /* Right Form */
-        .form-section {
-            width: 300px;
-            background-color: #90EE90;
-            padding: 20px;
-        }
-
-        .form-section h5 {
-            margin-top: 0;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        .form-section form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .form-field {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .form-field label {
-            font-weight: bold;
-        }
-
-        .form-field input[type="text"] {
-            width: 150px;
-            padding: 3px;
-        }
-
-        .form-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .form-buttons input {
-            padding: 5px 15px;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Header -->
-    <div class="nav-header">
-        <table>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project 1</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <table class="nav-table">
             <tr>
-                <td><img src="img1.jpeg" alt="Logo"></td>
+                <td>
+                    <img src="img1.jpeg" alt="Logo">
+                </td>
                 <td><b>HOME</b></td>
                 <td>SERVICES</td>
                 <td>PRODUCTS</td>
@@ -159,95 +22,104 @@
                 <td>LOGOUT</td>
             </tr>
         </table>
-    </div>
 
-    <!-- Banner Image -->
-    <img src="img6.jpeg" alt="Restaurant Management System" class="banner">
+        <!-- Banner with Restaurant Management System text -->
+        <div class="header-text">Restaurant Management System</div>
+        <table class="banner-table">
+            <tr>
+                <td>
+                    <img src="img6.jpeg" alt="Banner">
+                </td>
+            </tr>
+        </table>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Left Sidebar -->
-        <div class="sidebar">
-            <img src="img2.jpeg" alt="Menu Items">
-        </div>
+        <!-- Main Content -->
+        <table class="main-content">
+            <tr>
+                <!-- Left Column - Product Images -->
+                <td class="product-images">
+                    <img src="img2.jpeg" alt="Product 1">
+                    <img src="img3.jpeg" alt="Product 2">
+                    <img src="img4.jpeg" alt="Product 3">
+                    <img src="img5.jpeg" alt="Product 4">
+                </td>
 
-        <!-- Center Content -->
-        <div class="content">
-            <div class="welcome-section">
-                <h3>WELCOME TO GREEN PLANET!</h3>
-                <p>
-                    Green Planet is a free website template created by templates.com team. This website template is optimized 
-                    for 1024x768 screen resolution. It is also XHTML & CSS valid.
-                </p>
-                <p>
-                    The website template comes with two packages - with PSD source files and without them. PSD source files are 
-                    available for free for the registered members of Templates.com. The basic package (without PSD) is available 
-                    for anyone without registration.
-                </p>
-                <h3>RECENT ARTICLES</h3>
-            </div>
-
-            <div class="articles">
-                <div class="article">
-                    <img src="img3.jpeg" alt="Coffee and Tea">
-                    <div class="article-content">
-                        <h4>COFFEE TEA</h4>
-                        <p>From our site you will learn interesting facts about Green Planet and its inhabitants. Your journey starts here!</p>
+                <!-- Middle Column - Content -->
+                <td>
+                    <div class="welcome-section">
+                        <h5>WELCOME TO GREEN PLANET!</h5>
+                        <p>
+                            Green Plannet is a free websites template created by templates.com team. This website template is optimiized for 1024x768 screen resolution. it is also XHTML & CSS valid.
+                        </p>
+                        <p>
+                            The website template goes with two packages-with PSD source files and without them PSD source files are available for free for the reigstered members of Templates.com. The basic package(without PSD is available for anyone without registration).
+                        </p>
+                        <h5>RECENT ARTICLES</h5>
                     </div>
-                </div>
 
-                <div class="article">
-                    <img src="img4.jpeg" alt="Vegetarian Pizza">
-                    <div class="article-content">
-                        <h4>VEGETARIAN PIZZA</h4>
-                        <p>Free 1024x768 Optimized Website Template from templates.com! We really hope that you like this template and will use for your websites.</p>
+                    <!-- Article Sections -->
+                    <div class="container">
+                        <img src="img3.jpeg" alt="Coffee Tea">
+                        <div>
+                            <h4>COFFEE TEA</h4>
+                            <p>From our site you will learn interesting facts about Green Planet and it's inhabitants. Your journey starts here!</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="article">
-                    <img src="img5.jpeg" alt="Fresh Vegetables">
-                    <div class="article-content">
-                        <h4>FRESH VEGETABLES</h4>
-                        <p>The captivating stories about the journey to the green Planet you can read in this sample article.</p>
+                    <div class="container">
+                        <img src="img4.jpeg" alt="Vegetarian Pizza">
+                        <div>
+                            <h4>VEGETARIAN PIZZA</h4>
+                            <p>Free 1028x768 Optimized Website Template from templates.com! we really hope that you like this template and will use for your websites.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Right Form -->
-        <div class="form-section">
-            <h5>FILL THIS FORM TO INSERT INTO THE DATABASE</h5>
-            <form>
-                <div class="form-field">
-                    <label>NAMES:</label>
-                    <input type="text">
-                </div>
-                <div class="form-field">
-                    <label>ADDRESS:</label>
-                    <input type="text">
-                </div>
-                <div class="form-field">
-                    <label>SEX:</label>
-                    <input type="text">
-                </div>
-                <div class="form-field">
-                    <label>POSITION:</label>
-                    <input type="text">
-                </div>
-                <div class="form-field">
-                    <label>USER-NAME:</label>
-                    <input type="text">
-                </div>
-                <div class="form-field">
-                    <label>PASSWORD:</label>
-                    <input type="text">
-                </div>
-                <div class="form-buttons">
-                    <input type="button" value="SUBMIT">
-                    <input type="button" value="RETRIEVE">
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
+                    <div class="container">
+                        <img src="img5.jpeg" alt="Fresh Vegetables">
+                        <div>
+                            <h4>FRESH VEGETABLES</h4>
+                            <p>The captivating stories about the journey to the green Planet you can read in this sample article.</p>
+                        </div>
+                    </div>
+                </td>
+
+                <!-- Right Column - Form -->
+                <td class="form-section">
+                    <h5>FILL THIS FORM TO INSERT INTO THE DATABASE</h5>
+                    <div class="form">
+                        <form>
+                            <div class="form-group">
+                                <label>NAMES:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>ADDRESS:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>SEX:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>POSITION:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>USER-NAME:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>PASSWORD:</label>
+                                <input type="text">
+                            </div>
+                            <div class="button-group">
+                                <input type="button" value="SUBMIT">
+                                <input type="button" value="RETRIEVE">
+                            </div>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
