@@ -1,0 +1,19 @@
+h1{
+    color:blue;
+    background: pink;
+    border: solid pink ;
+    font-family: tahoma;
+}
+
+p{
+    font-size: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: Arial;
+}
+
+body{
+    background-image: url('back.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
