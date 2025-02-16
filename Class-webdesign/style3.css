@@ -1,0 +1,17 @@
+#this{
+    color: #f00505;
+    background-color: green;
+    border: solid green;
+    font-family: tahoma;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.today{
+    color:white;
+    background-color: black;
+    border: dashed blue
+    
+}
