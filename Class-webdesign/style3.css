@@ -10,8 +10,21 @@
 }
 
 .today{
-    color:white;
-    background-color: black;
-    border: dashed blue
+   border: 30px solid transparent;
+    border-image: url("back.jpg") 30 round;
+    padding: 15px;
+    box-shadow: 10px 10px 10px pink;
+}
+a:link{
+    background-color: orange;
+    
+}
+a:active{
+    background-color:black;
+    color:red;
+    
+}
+a:visited{
+    background-color: yellow;
     
 }

@@ -3,8 +3,36 @@
     <head>
         <title>Second class of CSS</title>
         <link rel="stylesheet"  type="text/css" href="style3.css">
+        <script type="text/javascript">
+            var name = prompt("Enter your name to continue");
+            if (name == null || name == "") {
+                alert("You must enter your name to continue");
+                window.location = "lesson3.html";
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                alert("Welcome, " + name + "!");
+            })
+            if (name=="pacifique"){
+                var n1= 30;
+                var n2=10;
+                var prod=n1*n2;
+                document.write("Welcome, " + name + "! Your product is: " + prod);
+            } else {
+                alert("You are not allowed to access this page");
+                window.location = "lesson3.html";
+            }
+        </script>
     </head>
     <body>
+        <table border="2" width="100%" height="10%">
+            <tr>
+                <td>HOME</td>
+                <td><a href="lesson2.html">Academics</a></td>
+                <td><a href="Interface1.html">Students</a></td>
+                <td><a href="https://www.igihe.com">Marks</a></td>
+                <td><a href="https://www.google.com">Registration</a></td>
+            </tr>
+        </table>
         <h2 class="text-center" id="this">Introduction to CSS </h2>
         <p>CSS stands for Cascading Style Sheets.</p>
         <h2>Ways of including CSS codes in HTML document </h2>
