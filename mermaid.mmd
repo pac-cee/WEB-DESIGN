@@ -1,0 +1,52 @@
+erDiagram
+    LIBRARY ||--o{ BOOK : contains
+    LIBRARY ||--o{ MEMBER : registers
+    LIBRARY ||--o{ LIBRARIAN : employs
+    BOOK ||--o{ TRANSACTION : "involved in"
+    MEMBER ||--o{ TRANSACTION : makes
+    LIBRARIAN ||--o{ TRANSACTION : processes
+
+    LIBRARY {
+        int library_id PK
+        string name
+        string location
+        string contact_number
+    }
+
+    BOOK {
+        string ISBN PK
+        string title
+        string author
+        string publisher
+        int year
+        boolean is_available
+        int copies_available
+    }
+
+    MEMBER {
+        string member_id PK
+        string name
+        string email
+        string phone
+        date join_date
+        string status
+    }
+
+    LIBRARIAN {
+        string staff_id PK
+        string name
+        string email
+        date hire_date
+        string role
+    }
+
+    TRANSACTION {
+        string transaction_id PK
+        string book_isbn FK
+        string member_id FK
+        string staff_id FK
+        date borrow_date
+        date due_date
+        date return_date
+        float fine_amount
+    }

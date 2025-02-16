@@ -1,0 +1,21 @@
+sequenceDiagram
+    actor Member
+    participant System
+    participant Book
+    participant Transaction
+    participant Librarian
+
+    Member->>System: Request to borrow book
+    System->>Book: Check availability
+    alt Book available
+        Book-->>System: Available
+        System->>Librarian: Notify of request
+        Librarian->>System: Approve request
+        System->>Transaction: Create transaction
+        Transaction-->>System: Transaction created
+        System-->>Member: Confirm borrowing
+    else Book not available
+        Book-->>System: Not available
+        System-->>Member: Book unavailable
+        System->>System: Add to waiting list
+    end
