@@ -1,0 +1,29 @@
+html, body {
+    margin: 10;
+    padding: 0;
+    height: 70vh;
+    background-image:url(background.jpg);
+}
+.table-container {
+
+    border: 2px solid black;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 15px; /* Smaller text */
+}
+#this{
+    background-color: aliceblue;
+}
+#ke{
+    text-align: center;
+}
+#banner{
+    background-color: black;
+    border-top-color:white ;
+}
