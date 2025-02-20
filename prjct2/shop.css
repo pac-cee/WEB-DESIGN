@@ -1,0 +1,184 @@
+/* Reset and basic settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Container */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Header and Navigation */
+  .site-header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .main-nav .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .main-nav .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Banner Section */
+  .banner {
+    border: 1px solid #000;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: 49px; /* as per original height */
+    display: block;
+  }
+  
+  /* Main Content Area */
+  .content {
+    border: 1px solid #000;
+  }
+  
+  /* Product Container Layout */
+  .product-container {
+    display: flex;
+    border-bottom: 1px solid #000;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 230px;  /* matching original width */
+    border-right: 1px solid #000;
+  }
+  
+  .sidebar-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Product Details */
+  .product-details {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .product-section {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 250px; /* fixed height as provided */
+    display: flex;
+  }
+  
+  .product-item {
+    width: 15%;
+    text-align: center;
+    padding-right: 10px;
+    border-right: 1px solid #000;
+  }
+  
+  .product-title {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+  
+  .product-info {
+    padding-left: 10px;
+    width: 85%;
+  }
+  
+  .product-info h3,
+  .product-info h4 {
+    margin-bottom: 5px;
+  }
+  
+  .product-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Registration Form */
+  .registration-form {
+    margin-top: 10px;
+  }
+  
+  .registration-form .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .registration-form label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .registration-form input[type="text"],
+  .registration-form input[type="number"],
+  .registration-form input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-buttons {
+    margin-top: 10px;
+  }
+  
+  .form-buttons input[type="button"] {
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  
+  /* Contact / Social Section */
+  .contact-section {
+    border: 1px solid #000;
+    padding: 10px;
+    /* Static height can be adjusted as needed */
+  }
+  
+  .contact-section h3 {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-item {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 5px;
+    width: 23%;
+  }
+  
+  .social-icon {
+    display: block;
+    margin: 0 auto;
+    max-width: 60px;
+    height: auto;
+  }
+  
