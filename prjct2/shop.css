@@ -7,7 +7,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url('backgroungImage.jpeg');
   }
   
   /* Container */
@@ -18,7 +18,7 @@
   
   /* Header and Navigation */
   .site-header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
   }
   
@@ -65,7 +65,9 @@
   
   .sidebar-img {
     width: 100%;
-    height: auto;
+    height: 85%;
+    padding-top: 50px;
+    padding-right: 50px;
   }
   
   /* Product Details */
