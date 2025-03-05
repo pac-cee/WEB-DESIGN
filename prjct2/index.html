@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,108 +8,170 @@
 </head>
 <body>
     <div class="table-container">
-        <!-- Navigation Table -->
-        <table border="1" width="100%" height="7%">
-            <tr id="banner">
-                <td><font color="white">Home</font></td>
-                <td><font color="white">Finance</font></td>
-                <td><font color="white">Product</font></td>
-                <td><font color="white">Address</font></td>
-                <td><font color="white">Help</font></td>
-                <td><font color="white">Contact Us</font></td>
-            </tr>
-        </table>
+        <!-- Navigation -->
+        <header>
+            <nav>
+                <table border="1" width="100%" height="7%" role="navigation">
+                    <tr id="banner">
+                        <td><a href="#"><font color="white">Home</font></a></td>
+                        <td><a href="#"><font color="white">Finance</font></a></td>
+                        <td><a href="#"><font color="white">Product</font></a></td>
+                        <td><a href="#"><font color="white">Address</font></a></td>
+                        <td><a href="#"><font color="white">Help</font></a></td>
+                        <td><a href="#"><font color="white">Contact Us</font></a></td>
+                    </tr>
+                </table>
+            </nav>
+        </header>
 
-        <!-- Banner Table -->
-        <table border="1" width="100%" height="8%">
-            <tr>
-                <td><img src="productonlinemarketing.jpeg" width="100%" height="49" alt="Products Online Marketing"></td>
-            </tr>
-        </table>
+        <!-- Banner -->
+        <section class="banner-section">
+            <table border="1" width="100%" height="8%" role="banner">
+                <tr>
+                    <td><img src="productonlinemarketing.jpeg" alt="Products Online Marketing" role="banner" class="banner-img"></td>
+                </tr>
+            </table>
+        </section>
 
-        <!-- Main Content Table -->
-        <table border="1" width="100%" height="80%">
-            <tr>
-                <td width="19%"><img src="bestNursingClothes.jpeg" height="80%" width="230" alt="Best Nursing Clothes"></td>
-                <td>
-                    <!-- Products Table -->
-                    <table border="1" width="100%" height="250">
-                        <!-- Golden Coat Section -->
-                        <tr>
-                            <td width="15%">
-                                <font color="white"><h3>Golden Coat</h3></font>
-                                <img src="blackJacket.jpeg" height="37%" width="75" alt="Golden Coat">
-                            </td>
-                            <td id="this">
-                                <h3>Start Selling Online</h3>
-                                <p>Easily sell online and ship orders to customers via click and collect and local delivery no matter what type of business you have, plus, sell on Instagram.</p>
-                                <h3>Other products</h3>
-                                <ul>
-                                    <li>T-shirt</li>
-                                    <li>handkerchiefs</li>
-                                    <li>shoes</li>
-                                    <li>tablets</li>
-                                    <li>etc</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <!-- Smart Coat Section -->
-                        <tr>
-                            <td width="15%">
-                                <font color="white"><h3>Smart Coat</h3></font>
-                                <img src="blueJacket.jpeg" height="40%" width="100" alt="Smart Coat">
-                            </td>
-                            <td id="this">
-                                <h4>If you need from some of these product please fill the form to register</h4>
-                                <pre><form>
-    First name:<input type="text" title="Enter your first name">
-   Second name:<input type="text" title="Enter your second name">
-       Address:<input type="text" title="Enter your address">
-     Telephone:<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter your telephone">
-         Email:<input type="email" title="Enter your email">
-     USER-NAME:<input type="text" title="Enter your username">
-      PASSWORD:<input type="password" title="Enter your password">
-   <input type="button" value="SUBMIT">    <input type="button" value="FETCH">
-</form></pre>
-                            </td>
-                        </tr>
-                    </table>
+        <!-- Main Content -->
+        <main>
+            <table border="1" width="100%" height="80%" role="main">
+                <tr>
+                    <!-- Sidebar -->
+                    <td width="19%">
+                        <aside>
+                            <img src="bestNursingClothes.jpeg" height="80%" width="230" alt="Best Nursing Clothes">
+                        </aside>
+                    </td>
+                    <td>
+                        <!-- Products Section -->
+                        <section class="products">
+                            <table border="1" width="100%" height="250">
+                                <!-- Golden Coat Article -->
+                                <tr>
+                                    <td width="15%">
+                                        <article class="product">
+                                            <header>
+                                                <h3><font color="white">Golden Coat</font></h3>
+                                            </header>
+                                            <figure>
+                                                <img src="blackJacket.jpeg" height="37%" width="75" alt="Golden Coat">
+                                            </figure>
+                                        </article>
+                                    </td>
+                                    <td id="this">
+                                        <article class="product-info">
+                                            <h3>Start Selling Online</h3>
+                                            <p>Easily sell online and ship orders to customers via click and collect and local delivery no matter what type of business you have, plus, sell on Instagram.</p>
+                                            <section class="other-products">
+                                                <h3>Other products</h3>
+                                                <ul>
+                                                    <li>T-shirt</li>
+                                                    <li>handkerchiefs</li>
+                                                    <li>shoes</li>
+                                                    <li>tablets</li>
+                                                    <li>etc</li>
+                                                </ul>
+                                            </section>
+                                        </article>
+                                    </td>
+                                </tr>
+                                <!-- Smart Coat Article -->
+                                <tr>
+                                    <td width="15%">
+                                        <article class="product">
+                                            <header>
+                                                <h3><font color="white">Smart Coat</font></h3>
+                                            </header>
+                                            <figure>
+                                                <img src="blueJacket.jpeg" height="40%" width="100" alt="Smart Coat">
+                                            </figure>
+                                        </article>
+                                    </td>
+                                    <td id="this">
+                                        <article class="registration">
+                                            <h4>If you need from some of these product please fill the form to register</h4>
+                                            <form role="form">
+                                                <fieldset>
+                                                    <pre>
+    First name:<input type="text" title="Enter your first name" aria-label="First name">
+   Second name:<input type="text" title="Enter your second name" aria-label="Second name">
+       Address:<input type="text" title="Enter your address" aria-label="Address">
+     Telephone:<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter your telephone" aria-label="Telephone">
+         Email:<input type="email" title="Enter your email" aria-label="Email">
+     USER-NAME:<input type="text" title="Enter your username" aria-label="Username">
+      PASSWORD:<input type="password" title="Enter your password" aria-label="Password">
+                                                    </pre>
+                                                    <div class="form-actions">
+                                                        <input type="button" value="SUBMIT" aria-label="Submit form">
+                                                        <input type="button" value="FETCH" aria-label="Fetch data">
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </article>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
 
-                    <!-- Contact Header Table -->
-                    <table border="1" width="100%" height="15%">
-                        <tr>
-                            <td id="ke"><font color="white"><h3>Contact Us from the following Social media:</h3></font></td>
-                        </tr>
-                    </table>
+                        <!-- Contact Section -->
+                        <section class="contact">
+                            <table border="1" width="100%" height="15%" role="contentinfo">
+                                <tr>
+                                    <td id="ke">
+                                        <header>
+                                            <h3><font color="white">Contact Us from the following Social media:</font></h3>
+                                        </header>
+                                    </td>
+                                </tr>
+                            </table>
 
-                    <!-- Social Media Table -->
-                    <table border="1" width="100%" height="10%">
-                        <tr id="this">
-                            <td>
-                                <h4>Facebook</h4>
-                                <img src="facebookLogo.jpeg" height="40%" width="35" alt="Facebook">
-                                <b><a href=""><font color="blue">engineering_info</font></a></b>
-                            </td>
-                            <td>
-                                <h4>Twitter</h4>
-                                <img src="twitterLogo.jpeg" height="60%" width="45" alt="Twitter">
-                                <b><a href=""><font color="blue">#Eng_info</font></a></b>
-                            </td>
-                            <td>
-                                <h4>Instagram</h4>
-                                <img src="igLogo.jpeg" height="65%" width="60" alt="Instagram">
-                                <b><a href=""><font color="blue">engineering_info</font></a></b>
-                            </td>
-                            <td>
-                                <h4>Gmail</h4>
-                                <img src="gmailLogo.jpeg" height="45%" width="35" alt="Gmail">
-                                <b><a href=""><font color="blue">enginfo@gmail.com</font></a></b>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+                            <!-- Social Media Links -->
+                            <table border="1" width="100%" height="10%" role="navigation">
+                                <tr id="this">
+                                    <td>
+                                        <article class="social-link">
+                                            <h4>Facebook</h4>
+                                            <figure>
+                                                <img src="facebookLogo.jpeg" height="40%" width="35" alt="Facebook">
+                                            </figure>
+                                            <b><a href="" aria-label="Facebook profile"><font color="blue">engineering_info</font></a></b>
+                                        </article>
+                                    </td>
+                                    <td>
+                                        <article class="social-link">
+                                            <h4>Twitter</h4>
+                                            <figure>
+                                                <img src="twitterLogo.jpeg" height="60%" width="45" alt="Twitter">
+                                            </figure>
+                                            <b><a href="" aria-label="Twitter profile"><font color="blue">#Eng_info</font></a></b>
+                                        </article>
+                                    </td>
+                                    <td>
+                                        <article class="social-link">
+                                            <h4>Instagram</h4>
+                                            <figure>
+                                                <img src="igLogo.jpeg" height="65%" width="60" alt="Instagram">
+                                            </figure>
+                                            <b><a href="" aria-label="Instagram profile"><font color="blue">engineering_info</font></a></b>
+                                        </article>
+                                    </td>
+                                    <td>
+                                        <article class="social-link">
+                                            <h4>Gmail</h4>
+                                            <figure>
+                                                <img src="gmailLogo.jpeg" height="45%" width="35" alt="Gmail">
+                                            </figure>
+                                            <b><a href="" aria-label="Email address"><font color="blue">enginfo@gmail.com</font></a></b>
+                                        </article>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+        </main>
     </div>
 </body>
 </html>
