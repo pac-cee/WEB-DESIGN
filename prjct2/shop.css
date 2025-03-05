@@ -5,9 +5,13 @@
     padding: 0;
   }
   
+  html, body {
+    height: 100vh;
+    background-image: url('backgroungImage.jpeg');
+  }
+  
   body {
     font-family: Arial, sans-serif;
-    background-image: url('backgroungImage.jpeg');
   }
   
   /* Container */
@@ -60,6 +64,7 @@
   /* Sidebar */
   .sidebar {
     width: 230px;  /* matching original width */
+    height:100%;
     border-right: 1px solid #000;
   }
   
@@ -92,21 +97,20 @@
   }
   
   .product-title {
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
     padding: 5px;
     margin-bottom: 5px;
   }
   
   .product-image {
-    width: 100%;
-    height: auto;
+    width: 75px;
+    height: 37%;
     margin-top: 5px;
   }
   
   .product-info {
-    padding-left: 10px;
-    width: 85%;
+    padding: 10px;
   }
   
   .product-info h3,
@@ -172,15 +176,68 @@
   
   .social-item {
     text-align: center;
-    border: 1px solid #000;
+    background-color: aliceblue;
     padding: 5px;
     width: 23%;
   }
   
   .social-icon {
-    display: block;
-    margin: 0 auto;
-    max-width: 60px;
-    height: auto;
+    height: 40%;
+    width: 35px;
+  }
+  
+  .social-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* New table-based layout styles */
+  .table-container {
+    width: 100%;
+    border: 2px solid black;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  /* New banner styles */
+  #banner {
+    background-color: black;
+    height: 7%;
+  }
+  
+  #banner td {
+    color: white;
+  }
+  
+  /* New main content styles */
+  #this {
+    background-color: aliceblue;
+  }
+  
+  /* Form Styling */
+  form pre {
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="email"] {
+    margin-left: 5px;
+  }
+  
+  input[type="button"] {
+    margin: 10px 5px;
+    padding: 2px 10px;
   }
   

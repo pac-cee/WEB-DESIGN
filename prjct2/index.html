@@ -1,133 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Shop Page</title>
-  <link rel="stylesheet" type="text/css" href="shop.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop page</title>
+    <link rel="stylesheet" type="text/css" href="shop.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Header and Navigation -->
-    <header class="site-header">
-      <nav class="main-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">Finance</a></li>
-          <li class="nav-item"><a href="#">Product</a></li>
-          <li class="nav-item"><a href="#">Address</a></li>
-          <li class="nav-item"><a href="#">Help</a></li>
-          <li class="nav-item"><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="table-container">
+        <!-- Navigation Table -->
+        <table border="1" width="100%" height="7%">
+            <tr id="banner">
+                <td><font color="white">Home</font></td>
+                <td><font color="white">Finance</font></td>
+                <td><font color="white">Product</font></td>
+                <td><font color="white">Address</font></td>
+                <td><font color="white">Help</font></td>
+                <td><font color="white">Contact Us</font></td>
+            </tr>
+        </table>
 
-    <!-- Banner Image -->
-    <section class="banner">
-      <img src="productonlinemarketing.jpeg" alt="Banner" class="banner-img">
-    </section>
+        <!-- Banner Table -->
+        <table border="1" width="100%" height="8%">
+            <tr>
+                <td><img src="productonlinemarketing.jpeg" width="100%" height="49" alt="Products Online Marketing"></td>
+            </tr>
+        </table>
 
-    <!-- Main Content Area -->
-    <main class="content">
-      <div class="product-container">
-        <!-- Sidebar with products image -->
-        <aside class="sidebar">
-          <img src="bestNursingClothes.jpeg" alt="Products" class="sidebar-img">
-        </aside>
-        <!-- Product Details and Registration Form -->
-        <section class="product-details">
-          <!-- First Product Section -->
-          <article class="product-section">
-            <div class="product-item">
-              <h3 class="product-title">Golden Coat</h3>
-              <img src="blackJacket.jpeg" alt="Golden Coat" class="product-image">
-            </div>
-            <div class="product-info">
-              <h3>Start Selling Online</h3>
-              <p>
-                Easily sell online and ship orders to customers – click and collect or local delivery – no matter what type of business you have. Plus, sell on Instagram.
-              </p>
-              <h3>Other Products</h3>
-              <ul class="product-list">
-                <li>T-shirt</li>
-                <li>Handcashifes</li>
-                <li>Shoes</li>
-                <li>Tablets</li>
-                <li>etc</li>
-              </ul>
-            </div>
-          </article>
+        <!-- Main Content Table -->
+        <table border="1" width="100%" height="80%">
+            <tr>
+                <td width="19%"><img src="bestNursingClothes.jpeg" height="80%" width="230" alt="Best Nursing Clothes"></td>
+                <td>
+                    <!-- Products Table -->
+                    <table border="1" width="100%" height="250">
+                        <!-- Golden Coat Section -->
+                        <tr>
+                            <td width="15%">
+                                <font color="white"><h3>Golden Coat</h3></font>
+                                <img src="blackJacket.jpeg" height="37%" width="75" alt="Golden Coat">
+                            </td>
+                            <td id="this">
+                                <h3>Start Selling Online</h3>
+                                <p>Easily sell online and ship orders to customers via click and collect and local delivery no matter what type of business you have, plus, sell on Instagram.</p>
+                                <h3>Other products</h3>
+                                <ul>
+                                    <li>T-shirt</li>
+                                    <li>handkerchiefs</li>
+                                    <li>shoes</li>
+                                    <li>tablets</li>
+                                    <li>etc</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!-- Smart Coat Section -->
+                        <tr>
+                            <td width="15%">
+                                <font color="white"><h3>Smart Coat</h3></font>
+                                <img src="blueJacket.jpeg" height="40%" width="100" alt="Smart Coat">
+                            </td>
+                            <td id="this">
+                                <h4>If you need from some of these product please fill the form to register</h4>
+                                <pre><form>
+    First name:<input type="text" title="Enter your first name">
+   Second name:<input type="text" title="Enter your second name">
+       Address:<input type="text" title="Enter your address">
+     Telephone:<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter your telephone">
+         Email:<input type="email" title="Enter your email">
+     USER-NAME:<input type="text" title="Enter your username">
+      PASSWORD:<input type="password" title="Enter your password">
+   <input type="button" value="SUBMIT">    <input type="button" value="FETCH">
+</form></pre>
+                            </td>
+                        </tr>
+                    </table>
 
-          <!-- Second Product Section with Registration Form -->
-          <article class="product-section">
-            <div class="product-item">
-              <h3 class="product-title">Smart Coat</h3>
-              <img src="blueJacket.jpeg" alt="Smart Coat" class="product-image">
-            </div>
-            <div class="product-info">
-              <h4>If you need some of these products, please fill the form to register</h4>
-              <form class="registration-form">
-                <div class="form-group">
-                  <label for="firstname">First Name:</label>
-                  <input type="text" id="firstname" name="firstname">
-                </div>
-                <div class="form-group">
-                  <label for="lastname">Second Name:</label>
-                  <input type="text" id="lastname" name="lastname">
-                </div>
-                <div class="form-group">
-                  <label for="address">Address:</label>
-                  <input type="text" id="address" name="address">
-                </div>
-                <div class="form-group">
-                  <label for="telephone">Telephone:</label>
-                  <input type="number" id="telephone" name="telephone">
-                </div>
-                <div class="form-group">
-                  <label for="username">User Name:</label>
-                  <input type="text" id="username" name="username">
-                </div>
-                <div class="form-group">
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" name="password">
-                </div>
-                <div class="form-buttons">
-                  <input type="button" value="SUBMIT">
-                  <input type="button" value="FETCH">
-                </div>
-              </form>
-            </div>
-          </article>
-        </section>
-      </div>
+                    <!-- Contact Header Table -->
+                    <table border="1" width="100%" height="15%">
+                        <tr>
+                            <td id="ke"><font color="white"><h3>Contact Us from the following Social media:</h3></font></td>
+                        </tr>
+                    </table>
 
-      <!-- Contact/Social Media Section -->
-      <section class="contact-section">
-        <h3>Contact Us via Social Media:</h3>
-        <div class="social-links">
-          <div class="social-item">
-            <h4>Facebook</h4>
-            <img src="facebookLogo.jpeg" alt="Facebook" class="social-icon">
-            <b><a href="#" class="social-link">engineering_info</a></b>
-          </div>
-          <div class="social-item">
-            <h4>Twitter</h4>
-            <img src="twitterLogo.jpeg" alt="Twitter" class="social-icon"> <!-- Updated image source -->
-            <b><a href="#" class="social-link">@Eng_info</a></b> <!-- Fixed link format -->
-          </div>
-          <div class="social-item">
-            <h4>Instagram</h4>
-            <img src="igLogo.jpeg" alt="Instagram" class="social-icon"> <!-- Updated image source -->
-            <b><a href="#" class="social-link">engineering_info</a></b>
-          </div>
-          <div class="social-item">
-            <h4>Gmail</h4>
-            <img src="gmailLogo.jpeg" alt="Gmail" class="social-icon"> <!-- Updated image source -->
-            <b><a href="#" class="social-link">enginfo@gmail.com</a></b>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
+                    <!-- Social Media Table -->
+                    <table border="1" width="100%" height="10%">
+                        <tr id="this">
+                            <td>
+                                <h4>Facebook</h4>
+                                <img src="facebookLogo.jpeg" height="40%" width="35" alt="Facebook">
+                                <b><a href=""><font color="blue">engineering_info</font></a></b>
+                            </td>
+                            <td>
+                                <h4>Twitter</h4>
+                                <img src="twitterLogo.jpeg" height="60%" width="45" alt="Twitter">
+                                <b><a href=""><font color="blue">#Eng_info</font></a></b>
+                            </td>
+                            <td>
+                                <h4>Instagram</h4>
+                                <img src="igLogo.jpeg" height="65%" width="60" alt="Instagram">
+                                <b><a href=""><font color="blue">engineering_info</font></a></b>
+                            </td>
+                            <td>
+                                <h4>Gmail</h4>
+                                <img src="gmailLogo.jpeg" height="45%" width="35" alt="Gmail">
+                                <b><a href=""><font color="blue">enginfo@gmail.com</font></a></b>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
