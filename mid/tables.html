@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Spanning Examples</title>
+  </head>
+  <body>
+    <!-- Table 1: Demonstrating Column Spanning -->
+    <table border="1" width="100%" height="100%">
+      <tr>
+        <td>1</td>
+        <td colspan="2">2 (colspan=2)</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+    </table>
+        <!-- Table 2: Demonstrating Row Spanning -->
+        <table border="1" width="100%" height="100%">
+            <tr>
+              <td rowspan="2">1 (rowspan=2)</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <!-- The first cell is already occupied by the rowspan -->
+              <td>4</td>
+              <td>5</td>
+            </tr>
+          </table>
+              <!-- Table 3: Demonstrating Combined Row and Column Spanning -->
+    <table border="1" width="100%" height="100%">
+        <tr>
+          <td rowspan="2" colspan="2">A (rowspan=2, colspan=2)</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <!-- The top left cell from above occupies two cells here -->
+          <td>C</td>
+        </tr>
+      </table>
+    </body>
+  </html>
+  
+      

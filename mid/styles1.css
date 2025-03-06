@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Style the table container similar to the grid container */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-collapse: collapse; /* Ensures borders are not doubled */
+  }
+  
+  /* Style for each table cell */
+  .cell {
+    background-color: #222;
+    border: 1px solid #f7f6f6;
+    padding: 15px;
+    color: #fff;
+    overflow: auto;
+  }
+  
+  /* Specific style for headings within each cell */
+  .cell h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Optional responsive adjustments:
+     On smaller screens, you might choose to stack cells or adjust the layout.
+     This example forces the table to be displayed as a block element for better readability. */
+  @media (max-width: 768px) {
+    .container,
+    .cell {
+      display: block;
+      width: 100%;
+    }
+  }
+  

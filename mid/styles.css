@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.cell {
+    background-color: #222;
+    border: 1px solid #f7f6f6;
+    padding: 15px;
+    color: #fff;
+    overflow: auto;
+}
+
+/* You can customize individual cell styles here */
+.cell h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* First row */
+.cell-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    min-height: 75px;
+}
+
+.cell-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    min-height: 75px;
+}
+
+.cell-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    min-height: 75px;
+}
+
+.cell-4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    min-height: 75px;
+}
+
+.cell-5 {
+    grid-column: 5 / 7;
+    grid-row: 1 / 2;
+    min-height: 75px;
+}
+
+/* Second row */
+.cell-6 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    min-height: 75px;
+}
+
+.cell-7 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    min-height: 75px;
+}
+
+.cell-8 {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+    min-height: 75px;
+}
+
+/* Third and Fourth rows */
+.cell-9 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    height: 500px; /* Customize this height as needed */
+}
+
+.cell-10 {
+    grid-column: 2 / 6;
+    grid-row: 3 / 5; /* Now spans both rows 3 and 4 */
+    height: 500px; /* Match height with cell-9 or customize as needed */
+}
+
+.cell-11 {
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    height: 350px; /* Customize this height as needed */
+}
+
+.cell-13 {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    height: 150px; /* Customize this height as needed */
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cell {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+}
