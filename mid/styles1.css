@@ -34,7 +34,16 @@
     margin-bottom: 10px;
     font-size: 1.2rem;
   }
-  
+  .cell-9{
+    height: 500px;
+  }
+  .cell-11{
+    width: 250px;
+    height: 350px;
+  }
+  .cell-13{
+    height: 150px;
+  }
   /* Optional responsive adjustments:
      On smaller screens, you might choose to stack cells or adjust the layout.
      This example forces the table to be displayed as a block element for better readability. */

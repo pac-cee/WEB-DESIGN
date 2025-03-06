@@ -14,8 +14,8 @@
       <td class="cell cell-2"><h3>Section 2</h3><p>Your content goes here</p></td>
       <td class="cell cell-3"><h3>Section 3</h3><p>Your content goes here</p></td>
       <td class="cell cell-4"><h3>Section 4</h3><p>Your content goes here</p></td>
-      <!-- cell-5 spans two columns -->
-      <td class="cell cell-5" colspan="2"><h3>Section 5</h3><p>Your content goes here</p></td>
+      <td class="cell cell-5"><h3>Section 5</h3><p>Your content goes here</p></td>
+      <td class="cell cell-6"><h3>Section 6</h3><p>Your content goes here</p></td>
     </tr>
     <!-- Second row -->
     <tr>
@@ -36,12 +36,40 @@
         <p>This is now a full section spanning rows 3 and 4</p>
       </td>
       <!-- cell-11 in row 3 -->
-      <td class="cell cell-11"><h3>Section 11</h3><p>Your content goes here</p></td>
+      <td class="cell cell-11"><h3>Section 11</h3>
+        <p>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </p>
+
+    </td>
     </tr>
     <tr>
       <!-- cell-13 in row 4 -->
-      <td class="cell cell-13"><h3>Section 13</h3><p>Your content goes here</p></td>
+      <td class="cell cell-13"><h3>Section 13</h3>
+        <p>
+            <p>Additional content goes here</p>
+            <table border="2px" width="100%" style="margin: 10px;">
+                <tr >
+                    <td><label for="num1">First num1:</label><br>
+                        <input type="text" id="num1" name="num1"><br>
+                    </td>
+                    <td><label for="num2">Second num2:</label><br>
+                        <input type="text" id="num2" name="num2"><br><br>  
+                    </td>
+                </tr>
+            </table>
+            <input type="text" id="result" readonly>
+            <input type="button" value="Calculate" onclick="calculateSum()">
+            <input type="button" value="Reset" onclick="resetFields()"></p>
+    </td>
     </tr>
   </table>
+  <script src="script.js"></script>
 </body>
 </html>
