@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Creating Events</title>
+    </head>
+    <body>
+        <table border="2" width="50%" height="50%">
+            <tr>
+                <td>
+                    <h2>MArks MAnagement System</h2>
+                    <pre>
+                        <form>
+                            CLASS-ACTIVITIES:<input type="number" id="ClassActivities"><br>
+                               MID-TERM-EXAM:<input type="number" id="MidTerm"><br>
+                                  FINAL-EXAM:<input type="number" id="FinalExam"><br>
+                                       TOTAL:<input type="number" id="totalResult" readonly><br>
+                                     AVERAGE:<input type="number" id="averageResult" readonly><br>
+
+                            <input type="button" value="TOTAL" onclick="calculateTotal()"> <input type="button" value="AVERAGE" onclick="calculateAverage()"> <input type="reset" value="DELETE ALL"> <input type="button" value="PRINT" onclick="window.print()">     
+                        </form>
+                    </pre>
+                </td>
+            </tr>
+        </table>
+        <script src="script5.js"></script>
+    </body>
+</html>
