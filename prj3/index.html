@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mid Semester Exams</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="midterm.css">
     <script src="script.js"></script>  
 </head>
 <body>
@@ -79,7 +79,7 @@
 
     <!-- Student Information Fields -->
     <label for="studentName">STUDENT-NAMES:</label>
-    <input type="text" id="studentName" placeholder="e.g. pacifique"><br>
+    <input type="text" id="studentName" placeholder="e.g. John Doe"><br>
 
     <label for="studentID">STUDENT-ID:</label>
     <input type="text" id="studentID" placeholder="e.g. 12345"><br>
@@ -97,17 +97,18 @@
     <label for="finalExam">FINAL-EXAM/40:</label>
     <input type="number" id="finalExam" placeholder="0 - 40"><br>
 
-    
+    <button onclick="calculateMarks()">CALCULATE</button>
+
     <hr>
 
     <!-- Results -->
-    <button onclick="calculateTotal()">TOTAL</button>
+    <label for="total">TOTAL:</label>
     <input type="text" id="total" readonly><br>
 
-    <button onclick="calculateAverage()">AVERAGE</button>
+    <label for="average">AVERAGE:</label>
     <input type="text" id="average" readonly><br>
 
-    <button onclick="calculateGrade()">GRADE</button>
+    <label for="grade">GRADE:</label>
     <input type="text" id="grade" readonly><br>
 
             </td>
