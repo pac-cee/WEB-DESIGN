@@ -1,5 +1,4 @@
-function calculateMarks() {
-    // Get the numeric values (or default to 0 if empty)
+function validateInputs() {
     let courseWorks = parseFloat(document.getElementById('courseWorks').value) || 0;
     let midTerm = parseFloat(document.getElementById('midTerm').value) || 0;
     let finalExam = parseFloat(document.getElementById('finalExam').value) || 0;
@@ -8,30 +7,46 @@ function calculateMarks() {
     if (courseWorks < 0 || courseWorks > 30) {
         alert('Course Works marks must be between 0 and 30');
         document.getElementById('courseWorks').value = '';
-        return;
+        return null;
     }
 
     if (midTerm < 0 || midTerm > 30) {
         alert('Mid Term marks must be between 0 and 30');
         document.getElementById('midTerm').value = '';
-        return;
+        return null;
     }
 
     if (finalExam < 0 || finalExam > 40) {
         alert('Final Exam marks must be between 0 and 40');
         document.getElementById('finalExam').value = '';
-        return;
+        return null;
     }
 
-    // Calculate total (out of 100)
-    let totalMarks = courseWorks + midTerm + finalExam;
+    return { courseWorks, midTerm, finalExam };
+}
+
+function calculateTotal() {
+    const marks = validateInputs();
+    if (!marks) return;
+
+    const totalMarks = marks.courseWorks + marks.midTerm + marks.finalExam;
     document.getElementById('total').value = totalMarks;
+    return totalMarks;
+}
 
-    // Average
-    let average = totalMarks / 3;
+function calculateAverage() {
+    const totalMarks = calculateTotal();
+    if (!totalMarks) return;
+
+    const average = totalMarks / 3;
     document.getElementById('average').value = average.toFixed(2);
+    return average;
+}
 
-    // Determine grade
+function calculateGrade() {
+    const totalMarks = calculateTotal();
+    if (!totalMarks) return;
+
     let grade;
     if (totalMarks >= 70 && totalMarks <= 100) {
         grade = "A";
@@ -43,4 +58,5 @@ function calculateMarks() {
         grade = "Failed";
     }
     document.getElementById('grade').value = grade;
+    return grade;
 }
