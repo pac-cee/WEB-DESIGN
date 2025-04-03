@@ -32,6 +32,8 @@ CREATE TABLE IF NOT EXISTS tasks (
     FOREIGN KEY (project_id) REFERENCES projects(project_id)
 );
 
+/*
+
 -- Insert sample data
 INSERT INTO users (username, email, password_hash) VALUES
 ('john_doe', 'john@example.com', 'hashed_password_1'),
@@ -45,3 +47,4 @@ INSERT INTO tasks (project_id, title, status, due_date) VALUES
 (1, 'Design Homepage', 'in_progress', '2024-04-15'),
 (1, 'Implement Contact Form', 'pending', '2024-04-20'),
 (2, 'Setup Payment Gateway', 'pending', '2024-04-25');
+*/

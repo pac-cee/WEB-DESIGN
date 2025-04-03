@@ -2,7 +2,8 @@
 session_start();
 
 // Database connection
-$db_config = [
+include("connection.php");
+/*$db_config = [
     'host' => 'localhost',
     'username' => 'root',
     'password' => '',
@@ -18,7 +19,7 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     die("Connection failed: " . $e->getMessage());
-}
+} */
 
 // Form validation class
 class FormValidator {
