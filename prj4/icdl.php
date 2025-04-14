@@ -60,7 +60,7 @@ if(isset($_POST['submit'])) {
         $message = "Please fill all fields with valid values before submitting";
     } else {
         // Prepare SQL statement with prepared statements to prevent SQL injection
-        $stmt = $conn->prepare("INSERT INTO employee_pension (employ_name, employee_address, monthly_salary, employee_period, benefit_percentage, total_amount, amount_per_month) VALUES (?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO pension_records (employ_name, employee_address, monthly_salary, employee_period, benefit_percentage, total_amount, amount_per_month) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssdiddd", $employName, $employeeAddress, $monthlySalary, $employeePeriod, $benefitPercentage, $totalAmount, $amountPerMonth);
         
         // Execute the statement
@@ -91,7 +91,7 @@ if(isset($_POST['retrieve'])) {
         $message = "Please enter an employee name to retrieve records";
     } else {
         // Prepare SQL statement for retrieval
-        $stmt = $conn->prepare("SELECT * FROM employee_pension WHERE employ_name LIKE ?");
+        $stmt = $conn->prepare("SELECT * FROM pension_records WHERE employ_name LIKE ?");
         $searchParam = "%" . $searchName . "%";
         $stmt->bind_param("s", $searchParam);
         $stmt->execute();
@@ -127,7 +127,7 @@ if(isset($_POST['delete'])) {
         $message = "Please enter an employee name to delete records";
     } else {
         // Prepare SQL statement for deletion
-        $stmt = $conn->prepare("DELETE FROM employee_pension WHERE employ_name = ?");
+        $stmt = $conn->prepare("DELETE FROM pension_records WHERE employ_name = ?");
         $stmt->bind_param("s", $searchName);
         
         // Execute the statement

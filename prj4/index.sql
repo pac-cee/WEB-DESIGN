@@ -1,8 +1,5 @@
--- Create the database
-CREATE DATABASE IF NOT EXISTS pension_management;
-
 -- Use the database
-USE pension_management;
+USE webdesign;
 
 -- Create employee_pension table
 CREATE TABLE IF NOT EXISTS pension_records (
