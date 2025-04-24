@@ -11,6 +11,16 @@ body {
     padding: 20px;
 }
 
+.outer-border {
+    background: #fff;
+    padding: 8px;
+    border: 6px solid #888;
+    box-shadow: 8px 8px 0 #222, 0 0 0 4px #888, 0 0 0 8px #fff;
+    border-radius: 16px;
+    width: fit-content;
+    margin: 18px auto;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -19,14 +29,30 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #bbb7;
+    border: 6px solid #bdbdbd;
 }
 
 .cell {
-    background-color: #222;
-    border: 1px solid #f7f6f6;
-    padding: 15px;
-    color: #fff;
+    background-color: #e8e8e8;
+    border: 6px solid #bdbdbd;
+    padding: 18px 12px;
+    color: #222;
     overflow: auto;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px #ccc8;
+}
+
+.cell-1, .cell-6 {
+    background-color: #fa3d4f;
+    border: 6px solid #bdbdbd;
+}
+
+.cell-1 h3, .cell-1 p, .cell-6 h3, .cell-6 p {
+    color: #111;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* You can customize individual cell styles here */
