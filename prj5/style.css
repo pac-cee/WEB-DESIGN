@@ -1,0 +1,88 @@
+.forms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90dvh;
+    /* margin: auto; */
+    margin-top: 1em;
+    gap: 5px;
+    border-top: 12px  solid rgb(72, 68, 68);
+    border-left: 12px  solid rgb(72, 68, 68);
+    border-bottom: 12px  solid rgb(43, 25, 25);
+    border-right: 12px  solid rgb(43, 25, 25);
+
+
+
+}
+section{
+    /* width: 100%; */
+    background: blanchedalmond;
+    border: 8px solid rgb(239, 180, 17);
+    border-radius: 12px;
+    background-image: url("login.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.login{
+    font-size: large;
+    /* border: 5px rgb(150, 114, 250) solid ; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 14px;
+
+
+}
+.login-heading{
+align-self: center;
+border-bottom:2px solid grey;
+width: 100%;
+
+
+}
+.Register{
+     background: indianred;
+     font-size: large;
+
+
+     background: blanchedalmond;
+     border: 8px solid rgb(239, 180, 17);
+     border-radius: 12px;
+     background-image: url("back.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: whitesmoke;
+}
+
+label{
+    font-size:  large;
+}
+.login-lable{
+    font-size: xxx-large;
+}
+
+main{
+    /* border: 6px solid rgb(87, 153, 122); */
+    width: 100%;
+    justify-self: end;
+    /* padding-top: 15px; */
+
+    /* align-self: unset; */
+    /* padding-left: 4px; */
+}
+
+.login-form{
+    /* background: #000; */
+    justify-self: end;
+}
+
+input{
+ font-size: large;   
+}
+
+
+form{
+    border: 4px gainsboro solid;
+    margin: 5px;
+    width: 97%;
+
+}
