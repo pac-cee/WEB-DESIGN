@@ -3,7 +3,7 @@ class Database {
     private $host = "localhost";
     private $username = "root";
     private $password = "Euqificap12.";
-    private $database = "webdesign";
+    private $database = "Eventify";
     public $conn;
 
     public function __construct() {

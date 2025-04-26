@@ -1,0 +1,140 @@
+/* Dashboard-specific styles for Eventify */
+body {
+  background: var(--bg, #f4f4f4);
+  font-family: 'Poppins', Arial, sans-serif;
+}
+nav {
+  background: linear-gradient(90deg, #6cb8ff 0%, #2d3a6e 100%);
+  color: #fff;
+  padding: 1.1em 2em;
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  box-shadow: 0 8px 32px rgba(79,140,255,0.14);
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 2em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.4s, box-shadow 0.4s;
+  overflow-x: auto;
+} 
+nav a {
+  color: #232946;
+  background: #f4f4f4;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.7em 1.6em;
+  border-radius: 10px;
+  font-size: 1.13em;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  box-shadow: 0 2px 8px #4f8cff18;
+  margin: 0 0.18em;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.20s, color 0.20s, box-shadow 0.18s, transform 0.18s;
+}
+nav a i {
+  font-size: 1.21em;
+  margin-right: 0.32em;
+  color: #4f8cff;
+  filter: drop-shadow(0 2px 6px #4f8cff33);
+}
+nav a.active, nav a[aria-current="page"] {
+  background: #eebbc3;
+  color: #232946;
+  box-shadow: 0 4px 16px #eebbc344;
+  transform: scale(1.04);
+}
+nav a.active i, nav a[aria-current="page"] i {
+  color: #232946;
+}
+nav a:hover, nav a:focus {
+  background: #d7eafe;
+  color: #232946;
+  box-shadow: 0 6px 24px #4f8cff22;
+  transform: translateY(-2px) scale(1.06);
+}
+nav a:hover i, nav a:focus i {
+  color: #232946;
+}
+
+nav a.active, nav a:focus, nav a:hover {
+  background: linear-gradient(90deg, #eebbc3 0%, #4f8cff 100%);
+  color: var(--secondary, #232946);
+  box-shadow: 0 6px 20px #4f8cff33;
+  transform: translateY(-3px) scale(1.06);
+  outline: none;
+}
+nav a.active::after, nav a:focus::after, nav a:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f8cff 0%, #eebbc3 100%);
+  border-radius: 0 0 8px 8px;
+  animation: tab-underline 0.4s cubic-bezier(.65,.05,.36,1) forwards;
+}
+@keyframes tab-underline {
+  from { width: 0; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(79,140,255,0.09);
+  padding: 2em 2em 3em 2em;
+}
+h1 {
+  font-size: 2.2em;
+  color: var(--primary, #4f8cff);
+  margin-bottom: 1em;
+}
+section {
+  margin-bottom: 2em;
+}
+canvas, #eventMap {
+  margin-top: 1em;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #4f8cff13;
+  background: #f8faff;
+}
+.feature-card, .quick-stats-table, #organizerEvents, #attendeeEvents {
+  background: #f8f8ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #4f8cff13;
+  padding: 1.3em 1.2em;
+  margin-bottom: 1em;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.feature-card:hover, .quick-stats-table:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px #4f8cff22;
+}
+@media (max-width: 900px) {
+  main {
+    padding: 1em 0.3em 2em 0.3em;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.7em;
+    padding: 0.7em 0.5em;
+    border-radius: 0 0 18px 18px;
+    margin-bottom: 1.2em;
+  }
+  nav a {
+    font-size: 1em;
+    padding: 0.7em 1em;
+    width: 100%;
+    justify-content: center;
+    margin: 0.1em 0;
+  }
+}
