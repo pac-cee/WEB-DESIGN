@@ -262,11 +262,6 @@ $conn->close();
         </section>
     </main>
 
-        <div class="insights">
-            <div class="insight-card">
-                <div class="insight-title">Books in Catalog</div>
-                <div class="insight-value" id="books-count"><?php echo $book_count; ?></div>
-            </div>
             <div class="insight-card">
                 <div class="insight-title">Quizzes Available</div>
                 <div class="insight-value" id="quizzes-count"><?php echo $quiz_count; ?></div>
