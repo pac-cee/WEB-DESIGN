@@ -16,12 +16,21 @@ require_once __DIR__ . '/config/db.php';
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <?php session_start(); ?>
     <nav>
         <a href="index.php" class="active"><i class="fas fa-house"></i> Home</a>
-        <a href="add_book.php"><i class="fas fa-plus-circle"></i> Add Book</a>
-        <a href="view_books.php"><i class="fas fa-book-open"></i> View Books</a>
-        <a href="register.php"><i class="fas fa-user-plus"></i> Register</a>
-        <a href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="views/book_catalog.php"><i class="fas fa-book-open"></i> Book Catalog</a>
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <a href="views/dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="views/quiz.php"><i class="fas fa-question-circle"></i> Quizzes</a>
+            <a href="views/quiz_results.php"><i class="fas fa-list-ol"></i> Quiz Results</a>
+            <a href="views/orders.php"><i class="fas fa-shopping-cart"></i> My Orders</a>
+            <a href="views/progress.php"><i class="fas fa-chart-line"></i> My Progress</a>
+            <a href="views/logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <?php else: ?>
+            <a href="views/register.php"><i class="fas fa-user-plus"></i> Register</a>
+            <a href="views/login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <?php endif; ?>
     </nav>
     <main>
         <section class="hero">
