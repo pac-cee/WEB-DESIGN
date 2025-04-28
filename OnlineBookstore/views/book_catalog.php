@@ -70,14 +70,17 @@ $conn->close();
                             <div class="book-price">$<?php echo htmlspecialchars($book['price']); ?></div>
                             <p class="book-desc"><?php echo nl2br(htmlspecialchars($book['description'])); ?></p>
                             <div class="actions">
-                                <form method="POST" action="order_book.php">
-                                    <input type="hidden" name="book_id" value="<?php echo $book['id']; ?>">
-                                    <button type="submit" class="quick-btn">Buy/Order</button>
-                                </form>
-                                <?php if (!empty($book['audio_file'])): ?>
-                                    <a href="../audio/<?php echo htmlspecialchars($book['audio_file']); ?>" class="btn-secondary" target="_blank">Listen</a>
-                                <?php endif; ?>
-                            </div>
+    <form method="POST" action="order_book.php">
+        <input type="hidden" name="book_id" value="<?php echo $book['id']; ?>">
+        <button type="submit" class="quick-btn">Buy/Order</button>
+    </form>
+    <?php if (!empty($book['read_file'])): ?>
+        <a href="../books/<?php echo htmlspecialchars($book['read_file']); ?>" class="btn-secondary" target="_blank">Read Online</a>
+    <?php endif; ?>
+    <?php if (!empty($book['audio_file'])): ?>
+        <a href="../audio/<?php echo htmlspecialchars($book['audio_file']); ?>" class="btn-secondary" target="_blank">Listen</a>
+    <?php endif; ?>
+</div>
                         </div>
                     </div>
                 <?php endforeach; ?>

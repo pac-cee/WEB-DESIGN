@@ -79,7 +79,7 @@ if ($row = $rec_quiz_result->fetch_assoc()) {
 $stmt->close();
 // --- Currently Reading Widget ---
 $current_reading = null;
-$stmt = $conn->prepare('SELECT b.title, p.pages_read, p.last_read FROM progress p JOIN books b ON p.book_id = b.id WHERE p.user_id = ? ORDER BY p.last_read DESC LIMIT 1');
+$stmt = $conn->prepare('SELECT b.id, b.title, b.cover_image, b.read_file, a.audio_file, p.pages_read, p.last_read FROM progress p JOIN books b ON p.book_id = b.id LEFT JOIN audio_books a ON b.id = a.book_id WHERE p.user_id = ? ORDER BY p.last_read DESC LIMIT 1');
 $stmt->bind_param('i', $user_id);
 $stmt->execute();
 $reading_result = $stmt->get_result();
@@ -254,6 +254,14 @@ $conn->close();
                         <div class="reading-title">"<?= htmlspecialchars($current_reading['title']) ?>"</div>
                         <div class="reading-pages">Pages read: <?= htmlspecialchars($current_reading['pages_read']) ?></div>
                         <div class="reading-date">Last read: <?= htmlspecialchars(date('M d, Y', strtotime($current_reading['last_read']))) ?></div>
+                        <div class="reading-actions" style="margin-top:0.7em;display:flex;gap:0.7em;">
+                            <?php if (!empty($current_reading['read_file'])): ?>
+                                <a href="../books/<?= htmlspecialchars($current_reading['read_file']) ?>" class="quick-btn" target="_blank"><i class="fas fa-book-open"></i> Read Online</a>
+                            <?php endif; ?>
+                            <?php if (!empty($current_reading['audio_file'])): ?>
+                                <a href="../audio/<?= htmlspecialchars($current_reading['audio_file']) ?>" class="quick-btn" target="_blank"><i class="fas fa-headphones"></i> Listen</a>
+                            <?php endif; ?>
+                        </div>
                     <?php else: ?>
                         <div class="reading-none">You are not currently reading any book.</div>
                     <?php endif; ?>
@@ -262,6 +270,11 @@ $conn->close();
         </section>
     </main>
 
+        <div class="insights">
+            <div class="insight-card">
+                <div class="insight-title">Books in Catalog</div>
+                <div class="insight-value" id="books-count"><?php echo $book_count; ?></div>
+            </div>
             <div class="insight-card">
                 <div class="insight-title">Quizzes Available</div>
                 <div class="insight-value" id="quizzes-count"><?php echo $quiz_count; ?></div>
@@ -296,9 +309,7 @@ $conn->close();
                 }
             }, stepTime);
         }
-        animateValue('books-count', 0, <?php echo $book_count; ?>, 900);
-        animateValue('quizzes-count', 0, <?php echo $quiz_count; ?>, 900);
-        animateValue('orders-count', 0, <?php echo $order_count; ?>, 900);
+        
     </script>
 </body>
 </html>
