@@ -27,7 +27,6 @@ $conn->close();
     <meta charset="UTF-8">
     <title>My Orders - OnlineBookstore</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/orders.css">
 </head>
 <body>
     <div class="dashboard">

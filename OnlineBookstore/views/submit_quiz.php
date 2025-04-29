@@ -47,9 +47,6 @@ $conn->close();
     <meta charset="UTF-8">
     <title>Quiz Result - OnlineBookstore</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <style>
-        .quiz-result { max-width: 400px; margin: 3rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(42,82,152,0.08); text-align: center; }
-    </style>
 </head>
 <body>
     <div class="quiz-result">

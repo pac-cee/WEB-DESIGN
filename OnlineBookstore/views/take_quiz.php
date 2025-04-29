@@ -43,14 +43,6 @@ $conn->close();
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($quiz['title']); ?> - Take Quiz</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <style>
-        .quiz-container { max-width: 800px; margin: 3rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(42,82,152,0.08); }
-        .question { margin-bottom: 2rem; }
-        .question h4 { margin: 0 0 0.5rem 0; }
-        .choices label { display: block; margin-bottom: 0.4rem; }
-        .btn-primary { background: #2a5298; color: #fff; border: none; padding: 0.5rem 1.2rem; border-radius: 5px; cursor: pointer; }
-        .btn-primary:hover { background: #43cea2; }
-    </style>
 </head>
 <body>
     <div class="quiz-container">

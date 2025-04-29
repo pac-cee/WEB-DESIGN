@@ -27,7 +27,6 @@ $conn->close();
     <meta charset="UTF-8">
     <title>My Quiz Results - OnlineBookstore</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/quiz_results.css">
 </head>
 <body>
     <div class="dashboard">

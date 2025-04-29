@@ -24,7 +24,6 @@ $conn->close();
     <meta charset="UTF-8">
     <title>Book Catalog - OnlineBookstore</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/book_catalog.css">
 </head>
 <body>
     <div class="dashboard">

@@ -29,17 +29,10 @@ $conn->close();
 <head>
     <meta charset=\"UTF-8\">
     <title>School Dashboard - OnlineBookstore</title>
-    <link rel=\"stylesheet\" href=\"../assets/css/styles.css\">
-    <style>
-        .school-dashboard { max-width: 1100px; margin: 3rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(42,82,152,0.08); }
-        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-        th, td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; text-align: left; }
-        th { background: #f4f7fa; }
-        .section { margin-bottom: 2.5rem; }
-    </style>
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <div class=\"school-dashboard\">
+    <div class=\"card\">
         <h2>School Dashboard</h2>
         <div class=\"section\">
             <h3>Students</h3>

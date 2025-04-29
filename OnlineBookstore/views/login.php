@@ -41,12 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Login - OnlineBookstore</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <style>
-        .login-form { max-width: 400px; margin: 3rem auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 12px rgba(42,82,152,0.08); }
-        .login-form input { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
-        .login-form button { width: 100%; }
-        .message { color: #d32f2f; margin-bottom: 1rem; }
-    </style>
 </head>
 <body>
     <div class="login-form">
