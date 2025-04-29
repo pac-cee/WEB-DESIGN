@@ -100,24 +100,47 @@ $conn->close();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <style>
-        /* Dashboard-specific styles (moved from dashboard.css) */
-        .dashboard { max-width: 1200px; margin: 0 auto; background: #f9fbfd; min-height: 100vh; padding-bottom: 2em; border-radius: 18px; box-shadow: 0 4px 24px rgba(42,82,152,0.10); }
-        .main-nav { display: flex; align-items: center; justify-content: space-between; background: #fff; padding: 1.2em 2em; border-radius: 18px 18px 0 0; box-shadow: 0 2px 12px rgba(42,82,152,0.09); margin-bottom: 1.5em; }
-        .nav-logo { font-weight: 700; font-size: 1.3em; color: #2a5298; text-decoration: none; margin-right: 2em; }
-        .nav-links { display: flex; gap: 1.5em; }
-        .nav-links a { color: #23263a; text-decoration: none; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: #2a5298; }
-        .nav-actions { display: flex; align-items: center; gap: 1.1em; }
-        #theme-btn { background: none; border: none; font-size: 1.3em; cursor: pointer; }
-        .profile-dropdown { position: relative; }
-        #profileBtn { background: none; border: none; font-size: 1.1em; cursor: pointer; color: #23263a; font-weight: 600; display: flex; align-items: center; gap: 0.5em; }
-        .profile-menu { display: none; position: absolute; right: 0; top: 2.5em; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(42,82,152,0.13); min-width: 120px; z-index: 10; }
-        .profile-dropdown.open .profile-menu { display: block; }
-        .profile-menu a, .profile-menu button { display: block; width: 100%; text-align: left; background: none; border: none; padding: 0.7em 1em; color: #23263a; text-decoration: none; font-size: 1em; cursor: pointer; }
-        .profile-menu a:hover, .profile-menu button:hover { background: #f4f7fa; }
-        .logout-btn { color: #c0392b; }
-        .dashboard-hero { display: flex; align-items: center; background: #fff; border-radius: 14px; box-shadow: 0 4px 24px rgba(42,82,152,0.10); padding: 2.2em 2em 2.2em 2.4em; margin-bottom: 2em; }
-        .dashboard-hero .hero-text { flex: 2; }
+        /* Only keep unique dashboard layout tweaks, rely on styles.css for shared UI */
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--bg);
+            min-height: 100vh;
+            padding-bottom: 2em;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(42,82,152,0.10);
+        }
+        .dashboard-hero-img img {
+            max-width: 160px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(42,82,152,0.09);
+        }
+        .dashboard-insights {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2em;
+            margin-bottom: 2em;
+        }
+        .insight-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(42,82,152,0.08);
+            padding: 1.4em 1.1em 1.2em 1.1em;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .insight-title {
+            font-size: 1em;
+            color: #6c7a89;
+            margin-bottom: 0.4em;
+            font-weight: 600;
+        }
+        .insight-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--text);
+        }
         .dashboard-hero .hero-text h1 { font-size: 2em; font-weight: 700; color: #23263a; margin-bottom: 0.4em; }
         .dashboard-hero .hero-text .subtitle { font-size: 1.1em; color: #6c7a89; margin-bottom: 1.2em; }
         .quick-actions { display: flex; gap: 1em; flex-wrap: wrap; }
