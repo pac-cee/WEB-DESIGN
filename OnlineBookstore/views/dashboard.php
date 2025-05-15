@@ -185,7 +185,7 @@ $conn->close();
                 <div class="profile-dropdown">
                     <button id="profileBtn"><i class="fas fa-user-circle"></i> <?php echo htmlspecialchars($username); ?></button>
                     <div class="profile-menu" id="profileMenu">
-                        <a href="#">Profile</a>
+                        <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
                         <form action="logout.php" method="POST"><button type="submit" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button></form>
                     </div>
                 </div>

@@ -218,3 +218,99 @@ tr:hover td {
   from { opacity: 0; transform: translateY(-24px); }
   to { opacity: 1; transform: none; }
 }
+
+/* Section Title */
+.section-title {
+    color: var(--primary);
+    font-size: 1.8em;
+    margin-bottom: 1.2em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+/* Hero Description */
+.hero-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    color: var(--text);
+    opacity: 0.9;
+}
+
+.feature-list {
+    margin: 1em 0 1.5em 1em;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-list li {
+    margin-bottom: 0.7em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.feature-list li i {
+    color: var(--primary);
+    font-size: 1.2em;
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.toast-success {
+    background: var(--success);
+}
+
+.toast.toast-error {
+    background: var(--error);
+}
