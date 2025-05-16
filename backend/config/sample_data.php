@@ -218,6 +218,327 @@ if ($categoryCount === 0) {
             'language' => 'English',
             'stock_quantity' => 3,
             'featured' => false
+        ],
+        // Added 20 more books below
+        [
+            'title' => 'Becoming',
+            'author' => 'Michelle Obama',
+            'description' => 'An intimate memoir by the former First Lady of the United States that recounts her experiences from childhood through her time in the White House.',
+            'price' => 18.99,
+            'original_price' => 24.99,
+            'cover_image' => 'https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 5, // Biography
+            'isbn' => '9781524763138',
+            'publisher' => 'Crown Publishing',
+            'publication_date' => '2018-11-13',
+            'pages' => 448,
+            'language' => 'English',
+            'stock_quantity' => 31,
+            'featured' => true
+        ],
+        [
+            'title' => 'The Silent Patient',
+            'author' => 'Alex Michaelides',
+            'description' => 'A psychological thriller about a woman who shoots her husband and then stops speaking, and the therapist determined to unravel the mystery of her silence.',
+            'price' => 13.99,
+            'original_price' => 16.99,
+            'cover_image' => 'https://images.pexels.com/photos/1765033/pexels-photo-1765033.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 3, // Mystery
+            'isbn' => '9781250301697',
+            'publisher' => 'Celadon Books',
+            'publication_date' => '2019-02-05',
+            'pages' => 336,
+            'language' => 'English',
+            'stock_quantity' => 27,
+            'featured' => true
+        ],
+        [
+            'title' => 'Dune',
+            'author' => 'Frank Herbert',
+            'description' => 'A science fiction novel set in the distant future amidst a feudal interstellar society where noble houses control individual planets.',
+            'price' => 12.99,
+            'original_price' => 15.99,
+            'cover_image' => 'https://images.pexels.com/photos/4947748/pexels-photo-4947748.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 4, // Science Fiction
+            'isbn' => '9780441172719',
+            'publisher' => 'Ace Books',
+            'publication_date' => '1965-08-01',
+            'pages' => 412,
+            'language' => 'English',
+            'stock_quantity' => 34,
+            'featured' => true
+        ],
+        [
+            'title' => 'The Power of Habit',
+            'author' => 'Charles Duhigg',
+            'description' => 'An examination of the science behind habit creation and reformation, explaining how habits work, how they can be changed, and their impact on our lives.',
+            'price' => 14.99,
+            'original_price' => 17.99,
+            'cover_image' => 'https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 2, // Non-Fiction
+            'isbn' => '9780812981605',
+            'publisher' => 'Random House',
+            'publication_date' => '2012-02-28',
+            'pages' => 371,
+            'language' => 'English',
+            'stock_quantity' => 18,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Alchemist',
+            'author' => 'Paulo Coelho',
+            'description' => 'A philosophical novel about a young Andalusian shepherd who dreams of finding worldly treasures and embarks on a journey to fulfill his personal legend.',
+            'price' => 11.99,
+            'original_price' => 14.99,
+            'cover_image' => 'https://images.pexels.com/photos/3310691/pexels-photo-3310691.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 1, // Fiction
+            'isbn' => '9780062315007',
+            'publisher' => 'HarperOne',
+            'publication_date' => '1988-01-01',
+            'pages' => 208,
+            'language' => 'English',
+            'stock_quantity' => 42,
+            'featured' => true
+        ],
+        [
+            'title' => 'Educated',
+            'author' => 'Tara Westover',
+            'description' => 'A memoir about a young girl who, kept out of school, leaves her survivalist family and goes on to earn a PhD from Cambridge University.',
+            'price' => 15.99,
+            'original_price' => 18.99,
+            'cover_image' => 'https://images.pexels.com/photos/6147369/pexels-photo-6147369.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 5, // Biography
+            'isbn' => '9780399590504',
+            'publisher' => 'Random House',
+            'publication_date' => '2018-02-20',
+            'pages' => 334,
+            'language' => 'English',
+            'stock_quantity' => 22,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Girl with the Dragon Tattoo',
+            'author' => 'Stieg Larsson',
+            'description' => 'A crime thriller that follows journalist Mikael Blomkvist and hacker Lisbeth Salander as they investigate the disappearance of a woman from a wealthy family.',
+            'price' => 12.99,
+            'original_price' => 15.99,
+            'cover_image' => 'https://images.pexels.com/photos/4065391/pexels-photo-4065391.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 3, // Mystery
+            'isbn' => '9780307949486',
+            'publisher' => 'Vintage Crime/Black Lizard',
+            'publication_date' => '2008-09-16',
+            'pages' => 672,
+            'language' => 'English',
+            'stock_quantity' => 16,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Immortal Life of Henrietta Lacks',
+            'author' => 'Rebecca Skloot',
+            'description' => 'The story of Henrietta Lacks, a woman whose cells were used without her knowledge to create the first immortal human cell line, and the profound impact on modern medicine.',
+            'price' => 13.99,
+            'original_price' => 16.99,
+            'cover_image' => 'https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 2, // Non-Fiction
+            'isbn' => '9781400052189',
+            'publisher' => 'Crown Publishing Group',
+            'publication_date' => '2010-02-02',
+            'pages' => 381,
+            'language' => 'English',
+            'stock_quantity' => 14,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Road',
+            'author' => 'Cormac McCarthy',
+            'description' => 'A post-apocalyptic novel following a father and son\'s journey through a desolate America, struggling to survive in a world devoid of resources and filled with danger.',
+            'price' => 11.99,
+            'original_price' => 14.99,
+            'cover_image' => 'https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 1, // Fiction
+            'isbn' => '9780307387899',
+            'publisher' => 'Vintage Books',
+            'publication_date' => '2006-09-26',
+            'pages' => 287,
+            'language' => 'English',
+            'stock_quantity' => 9,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Wright Brothers',
+            'author' => 'David McCullough',
+            'description' => 'The dramatic story of Wilbur and Orville Wright, the two brothers who changed the world with the invention of the airplane.',
+            'price' => 16.99,
+            'original_price' => 19.99,
+            'cover_image' => 'https://images.pexels.com/photos/76957/tree-top-view-aircraft-trail-76957.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 6, // History
+            'isbn' => '9781476728742',
+            'publisher' => 'Simon & Schuster',
+            'publication_date' => '2015-05-05',
+            'pages' => 336,
+            'language' => 'English',
+            'stock_quantity' => 12,
+            'featured' => false
+        ],
+        [
+            'title' => 'Neuromancer',
+            'author' => 'William Gibson',
+            'description' => 'A groundbreaking cyberpunk novel that follows a washed-up computer hacker hired for one last job, which draws him into a web of intrigue and danger.',
+            'price' => 10.99,
+            'original_price' => 13.99,
+            'cover_image' => 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 4, // Science Fiction
+            'isbn' => '9780441569595',
+            'publisher' => 'Ace Books',
+            'publication_date' => '1984-07-01',
+            'pages' => 271,
+            'language' => 'English',
+            'stock_quantity' => 23,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Sixth Extinction',
+            'author' => 'Elizabeth Kolbert',
+            'description' => 'An exploration of the ongoing Holocene extinction, potentially the sixth mass extinction in Earth\'s history, caused by human activity.',
+            'price' => 14.99,
+            'original_price' => 17.99,
+            'cover_image' => 'https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 2, // Non-Fiction
+            'isbn' => '9781250062185',
+            'publisher' => 'Picador',
+            'publication_date' => '2014-02-11',
+            'pages' => 336,
+            'language' => 'English',
+            'stock_quantity' => 17,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Nightingale',
+            'author' => 'Kristin Hannah',
+            'description' => 'A historical novel set in France during World War II, following two sisters as they struggle to survive and resist the German occupation.',
+            'price' => 12.99,
+            'original_price' => 15.99,
+            'cover_image' => 'https://images.pexels.com/photos/2088233/pexels-photo-2088233.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 1, // Fiction
+            'isbn' => '9781250080400',
+            'publisher' => 'St. Martin\'s Griffin',
+            'publication_date' => '2015-02-03',
+            'pages' => 440,
+            'language' => 'English',
+            'stock_quantity' => 29,
+            'featured' => false
+        ],
+        [
+            'title' => 'In Cold Blood',
+            'author' => 'Truman Capote',
+            'description' => 'A non-fiction novel detailing the 1959 murders of four members of the Herbert Clutter family in the small farming community of Holcomb, Kansas.',
+            'price' => 10.99,
+            'original_price' => 13.99,
+            'cover_image' => 'https://images.pexels.com/photos/172277/pexels-photo-172277.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 3, // Mystery
+            'isbn' => '9780679745587',
+            'publisher' => 'Vintage',
+            'publication_date' => '1965-01-17',
+            'pages' => 343,
+            'language' => 'English',
+            'stock_quantity' => 21,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Color Purple',
+            'author' => 'Alice Walker',
+            'description' => 'A novel that follows the life of African American women in the southern United States in the 1930s, addressing the issues of racism, sexism, and poverty.',
+            'price' => 9.99,
+            'original_price' => 12.99,
+            'cover_image' => 'https://images.pexels.com/photos/1122626/pexels-photo-1122626.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 1, // Fiction
+            'isbn' => '9780156028356',
+            'publisher' => 'Mariner Books',
+            'publication_date' => '1982-06-01',
+            'pages' => 288,
+            'language' => 'English',
+            'stock_quantity' => 8,
+            'featured' => false
+        ],
+        [
+            'title' => 'Leonardo da Vinci',
+            'author' => 'Walter Isaacson',
+            'description' => 'A biography of the Italian Renaissance polymath that connects his art to his science and shows how his genius was based on skills we can improve in ourselves.',
+            'price' => 19.99,
+            'original_price' => 24.99,
+            'cover_image' => 'https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 5, // Biography
+            'isbn' => '9781501139154',
+            'publisher' => 'Simon & Schuster',
+            'publication_date' => '2017-10-17',
+            'pages' => 624,
+            'language' => 'English',
+            'stock_quantity' => 11,
+            'featured' => false
+        ],
+        [
+            'title' => 'The Guns of August',
+            'author' => 'Barbara W. Tuchman',
+            'description' => 'A detailed account of the first month of World War I, examining the decisions, strategies, and events that led to and shaped the conflict.',
+            'price' => 14.99,
+            'original_price' => 17.99,
+            'cover_image' => 'https://images.pexels.com/photos/73833/ww1-war-soldiers-war-memorial-73833.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 6, // History
+            'isbn' => '9780345476098',
+            'publisher' => 'Presidio Press',
+            'publication_date' => '1962-03-08',
+            'pages' => 608,
+            'language' => 'English',
+            'stock_quantity' => 6,
+            'featured' => false
+        ],
+        [
+            'title' => 'Ready Player One',
+            'author' => 'Ernest Cline',
+            'description' => 'A science fiction novel set in a dystopian 2045 where people escape the real world through a virtual reality game called the OASIS.',
+            'price' => 12.99,
+            'original_price' => 15.99,
+            'cover_image' => 'https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 4, // Science Fiction
+            'isbn' => '9780307887443',
+            'publisher' => 'Crown Publishers',
+            'publication_date' => '2011-08-16',
+            'pages' => 374,
+            'language' => 'English',
+            'stock_quantity' => 38,
+            'featured' => false
+        ],
+        [
+            'title' => 'Team of Rivals',
+            'author' => 'Doris Kearns Goodwin',
+            'description' => 'A biographical portrait of Abraham Lincoln and the men who served with him in his cabinet, many of whom were his political rivals.',
+            'price' => 18.99,
+            'original_price' => 21.99,
+            'cover_image' => 'https://images.pexels.com/photos/6847584/pexels-photo-6847584.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 6, // History
+            'isbn' => '9780743270755',
+            'publisher' => 'Simon & Schuster',
+            'publication_date' => '2005-10-25',
+            'pages' => 944,
+            'language' => 'English',
+            'stock_quantity' => 13,
+            'featured' => false
+        ],
+        [
+            'title' => 'Where the Crawdads Sing',
+            'author' => 'Delia Owens',
+            'description' => 'A coming-of-age story and possible murder mystery about a young woman named Kya who grows up isolated in the marshes of North Carolina.',
+            'price' => 13.99,
+            'original_price' => 16.99,
+            'cover_image' => 'https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'category_id' => 1, // Fiction
+            'isbn' => '9780735219090',
+            'publisher' => 'G.P. Putnam\'s Sons',
+            'publication_date' => '2018-08-14',
+            'pages' => 384,
+            'language' => 'English',
+            'stock_quantity' => 40,
+            'featured' => true
         ]
     ];
     
