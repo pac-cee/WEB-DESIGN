@@ -28,10 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="assets/css/book_catalog.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
-    <script src="assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/book_catalog.css">
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+    <script src="/assets/js/main.js" defer></script>
 </head>
 </head>
 <body class="fade-in">
