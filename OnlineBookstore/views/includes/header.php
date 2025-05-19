@@ -2,6 +2,8 @@
 // Calculate the relative path to the root directory based on the current file path
 $currentPath = $_SERVER['SCRIPT_NAME'];
 $rootPath = '../';
+
+// Handle nested includes
 if (strpos($currentPath, '/views/includes/') !== false) {
     $rootPath = '../../';
 }
