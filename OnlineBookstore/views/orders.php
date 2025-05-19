@@ -38,6 +38,72 @@ $conn->close();
     <link rel="stylesheet" href="/assets/css/dashboard.css">
     <link rel="stylesheet" href="/assets/css/dashboard_custom.css">
     <script src="/assets/js/main.js" defer></script>
+    <style>
+        /* Only keep unique dashboard layout tweaks, rely on styles.css for shared UI */
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--bg);
+            min-height: 100vh;
+            padding-bottom: 2em;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(42,82,152,0.10);
+        }
+        .dashboard-hero-img img {
+            max-width: 160px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(42,82,152,0.09);
+        }
+        .dashboard-insights {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2em;
+            margin-bottom: 2em;
+        }
+        .insight-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(42,82,152,0.08);
+            padding: 1.4em 1.1em 1.2em 1.1em;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .insight-title {
+            font-size: 1em;
+            color: #6c7a89;
+            margin-bottom: 0.4em;
+            font-weight: 600;
+        }
+        .insight-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .dashboard-hero .hero-text h1 { font-size: 2em; font-weight: 700; color: #23263a; margin-bottom: 0.4em; }
+        .dashboard-hero .hero-text .subtitle { font-size: 1.1em; color: #6c7a89; margin-bottom: 1.2em; }
+        .quick-actions { display: flex; gap: 1em; flex-wrap: wrap; }
+        .quick-btn { display: inline-flex; align-items: center; gap: 0.5em; background: #2a5298; color: #fff; padding: 0.65em 1.2em; border-radius: 8px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+        .quick-btn:hover { background: #1c3561; }
+        .dashboard-hero-img { flex: 1; display: flex; justify-content: flex-end; }
+        .dashboard-hero-img img { max-width: 160px; border-radius: 10px; box-shadow: 0 2px 8px rgba(42,82,152,0.09); }
+        .dashboard-insights { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2em; margin-bottom: 2em; }
+        .insight-card { background: #fff; border-radius: 12px; box-shadow: 0 2px 10px rgba(42,82,152,0.08); padding: 1.4em 1.1em 1.2em 1.1em; display: flex; flex-direction: column; align-items: flex-start; }
+        .insight-title { font-size: 1em; color: #6c7a89; margin-bottom: 0.4em; font-weight: 600; }
+        .insight-value { font-size: 2em; font-weight: 700; color: #23263a; }
+        @media (max-width: 900px) {
+            .dashboard-insights { grid-template-columns: repeat(2, 1fr); }
+            .dashboard-hero { flex-direction: column; gap: 1.5em; padding: 1.2em 0.9em 1.2em 0.9em; }
+            .dashboard-hero-img { justify-content: center; }
+        }
+        @media (max-width: 600px) {
+            .dashboard-insights { grid-template-columns: 1fr; }
+            .dashboard { padding: 0.4em; }
+            .main-nav { flex-direction: column; gap: 1em; padding: 1em 0.7em; }
+            .dashboard-hero { padding: 1em 0.4em 1em 0.4em; }
+        }
+    </style>
+    <script defer src="../assets/js/dashboard_custom.js"></script>
 </head>
 <body>
     <div class="dashboard">

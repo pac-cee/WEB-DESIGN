@@ -205,9 +205,10 @@ $conn->close();
                         <a href="quiz.php" class="quick-btn"><i class="fas fa-plus-circle"></i> Take New Quiz</a>
                     </div>
                 </div>
-                <div class="hero-img dashboard-hero-img">
-                    <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/book-2022464_1280.png" alt="Bookstore Illustration">
+                <div>
+                    
                 </div>
+
             </section>
             <section class="dashboard-insights">
                 <div class="insight-card">
